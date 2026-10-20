@@ -2,7 +2,7 @@
 export const profile = {
   name: 'Sudheer Papineni',
   initials: 'SP',
-  title: 'Web & Mobile Applications Developer',
+  title: 'Full Stack Web & Mobile Applications Developer',
   location: 'Texas, USA',
   intro: 'I build web and mobile apps with React and React Native.',
   site: 'https://sudir81.github.io',
