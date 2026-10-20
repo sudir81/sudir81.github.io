@@ -1,0 +1,52 @@
+---
+import { projects } from '../data/types';
+import ProjectCard from './ProjectCard.astro';
+const categories = [...new Set(projects.map((p) => p.category))];
+---
+<section id="all-projects" class="mx-auto max-w-5xl px-4 pb-16 sm:px-6">
+  <div class="reveal">
+    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">All projects</h3>
+    <div class="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+        <button type="button" data-filter="all" aria-pressed="true" class="filter-btn">All</button>
+        {categories.map((c) => <button type="button" data-filter={c} aria-pressed="false" class="filter-btn">{c}</button>)}
+      </div>
+      <div>
+        <label for="search" class="sr-only">Search projects by name or tech</label>
+        <input id="search" type="search" placeholder="Search name or tech…" class="w-full rounded-full border border-slate-300 bg-white px-4 py-2 text-sm text-slate-900 placeholder:text-slate-600 sm:w-64 dark:border-slate-700 dark:bg-slate-900 dark:text-white dark:placeholder:text-slate-400" />
+      </div>
+    </div>
+    <p id="count" class="mt-4 text-sm text-slate-600 dark:text-slate-400" aria-live="polite"></p>
+    <ul id="grid" class="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {projects.map((p) => <li class="project-item"><ProjectCard project={p} /></li>)}
+    </ul>
+    <p id="empty" hidden class="mt-6 text-slate-600 dark:text-slate-400">No projects match your search.</p>
+  </div>
+</section>
+<script>
+  const items = [...document.querySelectorAll<HTMLElement>('.project-item')];
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>('.filter-btn')];
+  const search = document.getElementById('search') as HTMLInputElement;
+  const count = document.getElementById('count')!;
+  const empty = document.getElementById('empty')!;
+  let cat = 'all';
+  function apply() {
+    const q = search.value.trim().toLowerCase();
+    let shown = 0;
+    for (const li of items) {
+      const card = li.firstElementChild as HTMLElement;
+      const ok = (cat === 'all' || card.dataset.category === cat) && (!q || card.dataset.search!.includes(q));
+      li.hidden = !ok;
+      if (ok) shown++;
+    }
+    count.textContent = `Showing ${shown} of ${items.length} projects`;
+    empty.hidden = shown > 0;
+  }
+  buttons.forEach((b) => b.addEventListener('click', () => {
+    cat = b.dataset.filter!;
+    buttons.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    apply();
+  }));
+  search.addEventListener('input', apply);
+  apply();
+</script>

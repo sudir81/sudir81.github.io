@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { projects, type Project } from '../../data/types';
+
+export function getStaticPaths() {
+  return projects.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+}
+const { project: p } = Astro.props as { project: Project };
+const summary = p.readmeSummary && p.readmeSummary !== p.description && !/localhost:3000|install the packages/i.test(p.readmeSummary) ? p.readmeSummary : null;
+---
+<BaseLayout title={`${p.name} | Sudheer Papineni`} description={p.description} path={`/projects/${p.slug}/`}>
+  <article class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <a href="/#work" class="text-sm font-medium text-accent-700 hover:underline dark:text-accent-300">← Back to all work</a>
+    <p class="eyebrow mt-8">{p.category}</p>
+    <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">{p.name}</h1>
+    <p class="mt-4 text-lg">{p.description}</p>
+    {summary && (
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-slate-900 dark:text-white">From the README</h2>
+        <p class="mt-2">{summary}</p>
+      </section>
+    )}
+    {p.languages.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Tech stack</h2>
+        <ul class="mt-3 flex flex-wrap gap-2">{p.languages.map((l) => <li class="tag">{l}</li>)}</ul>
+      </section>
+    )}
+    {p.images.length > 0 && (
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold text-slate-900 dark:text-white">Screenshots</h2>
+        <div class="mt-3 grid gap-4 sm:grid-cols-2">
+          {p.images.map((src, i) => <img src={src} alt={`${p.name} screenshot ${i + 1}`} loading="lazy" class="w-full rounded-lg border border-slate-200 dark:border-slate-800" />)}
+        </div>
+      </section>
+    )}
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a href={p.url} rel="noopener" class="btn btn-primary">View on GitHub</a>
+      {p.homepage && <a href={p.homepage} rel="noopener" class="btn btn-ghost">Live demo</a>}
+    </div>
+  </article>
+</BaseLayout>

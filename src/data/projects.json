@@ -1,0 +1,498 @@
+[
+  {
+    "slug": "playwright-work",
+    "name": "playwright-work",
+    "description": "A collection of end-to-end UI test automation projects built with Playwright Test in JavaScript.",
+    "category": "Testing & Tooling",
+    "featured": true,
+    "languages": [
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/playwright-work",
+    "homepage": null,
+    "updatedAt": "2026-10-14T16:01:17Z",
+    "hasReadme": true,
+    "readmeSummary": "A collection of end-to-end UI test automation projects built with Playwright Test in JavaScript, created while learning and practicing test automation.",
+    "images": []
+  },
+  {
+    "slug": "r-kidsshop",
+    "name": "r-KidsShop",
+    "description": "An e-commerce web application for kids' products built with React and SCSS.",
+    "category": "Web Apps (React)",
+    "featured": true,
+    "languages": [
+      "JavaScript",
+      "SCSS",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/r-KidsShop",
+    "homepage": null,
+    "updatedAt": "2024-06-17T22:44:09Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    "images": []
+  },
+  {
+    "slug": "cars-showroom",
+    "name": "cars-showroom",
+    "description": "A TypeScript React app showcasing a car showroom with a clean, browsable listing UI.",
+    "category": "Web Apps (React)",
+    "featured": true,
+    "languages": [
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/cars-showroom",
+    "homepage": null,
+    "updatedAt": "2022-01-21T06:28:10Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    "images": []
+  },
+  {
+    "slug": "rn-spotify-all",
+    "name": "rn-spotify_all",
+    "description": "A TypeScript React Native (Expo) clone of the Spotify mobile app with tab navigation and reusable components.",
+    "category": "Mobile (React Native)",
+    "featured": true,
+    "languages": [
+      "TypeScript",
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/rn-spotify_all",
+    "homepage": null,
+    "updatedAt": "2021-10-20T03:59:11Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "rn-uber-clone",
+    "name": "rn-uber-clone",
+    "description": "A React Native clone of the Uber ride-hailing app, practising mobile navigation and map-based UI.",
+    "category": "Mobile (React Native)",
+    "featured": true,
+    "languages": [
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/rn-uber-clone",
+    "homepage": null,
+    "updatedAt": "2021-08-05T04:43:22Z",
+    "hasReadme": true,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "apollogql-tutorial",
+    "name": "ApolloGQL-tutorial",
+    "description": "A full-stack GraphQL learning project with an Apollo Server backend and an Apollo Client front-end.",
+    "category": "GraphQL & State",
+    "featured": true,
+    "languages": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/ApolloGQL-tutorial",
+    "homepage": null,
+    "updatedAt": "2020-04-24T03:42:31Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "js-apps",
+    "name": "JS-Apps",
+    "description": "A collection of small JavaScript, HTML and CSS practice apps.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/JS-Apps",
+    "homepage": null,
+    "updatedAt": "2024-06-28T19:04:14Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "webpack-demoapp",
+    "name": "WebPack_DemoApp",
+    "description": "A demo app showing a hand-configured Webpack build for a JavaScript project.",
+    "category": "Testing & Tooling",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/WebPack_DemoApp",
+    "homepage": null,
+    "updatedAt": "2023-01-07T11:58:07Z",
+    "hasReadme": true,
+    "readmeSummary": "To run the app, need to install the packages.",
+    "images": []
+  },
+  {
+    "slug": "tek-hackran-reactapp",
+    "name": "Tek_HackRan_ReactApp",
+    "description": "A React app built for a TekHackRan coding challenge.",
+    "category": "Testing & Tooling",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/Tek_HackRan_ReactApp",
+    "homepage": null,
+    "updatedAt": "2023-01-05T21:45:23Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    "images": []
+  },
+  {
+    "slug": "stargame",
+    "name": "StarGame",
+    "description": "A small browser game built with React.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/StarGame",
+    "homepage": null,
+    "updatedAt": "2023-01-05T18:42:01Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    "images": []
+  },
+  {
+    "slug": "angjs2reactjs",
+    "name": "angjs2reactjs",
+    "description": "An exercise in modernizing an AngularJS app by migrating it to React.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/angjs2reactjs",
+    "homepage": null,
+    "updatedAt": "2023-01-04T06:02:07Z",
+    "hasReadme": true,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "graphql-react",
+    "name": "graphql-react",
+    "description": "A React front-end practice project consuming a GraphQL API.",
+    "category": "GraphQL & State",
+    "featured": false,
+    "languages": [
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/graphql-react",
+    "homepage": null,
+    "updatedAt": "2022-12-11T13:21:24Z",
+    "hasReadme": true,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "rn-goodfood",
+    "name": "rn-goodFood",
+    "description": "A React Native food app built as a mobile UI practice project.",
+    "category": "Mobile (React Native)",
+    "featured": false,
+    "languages": [
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/rn-goodFood",
+    "homepage": null,
+    "updatedAt": "2022-12-06T15:27:08Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "games",
+    "name": "Games",
+    "description": "Placeholder repository for future game projects (currently empty).",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [],
+    "topics": [],
+    "url": "https://github.com/sudir81/Games",
+    "homepage": null,
+    "updatedAt": "2022-06-09T03:43:29Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "redux-learn",
+    "name": "redux-learn",
+    "description": "A learning project covering Redux state management fundamentals.",
+    "category": "GraphQL & State",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/redux-learn",
+    "homepage": null,
+    "updatedAt": "2022-06-04T05:39:40Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "shopping-site",
+    "name": "shopping-site",
+    "description": "A React shopping website with a product listing and cart-style shopping UI.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "HTML",
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/shopping-site",
+    "homepage": null,
+    "updatedAt": "2022-04-27T19:17:19Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode.\\ Open http://localhost:3000 to view it in your browser.",
+    "images": []
+  },
+  {
+    "slug": "rn-ubereats-all",
+    "name": "rn-ubereats_all",
+    "description": "A React Native (Expo) food-delivery app inspired by Uber Eats, runnable on web and device.",
+    "category": "Mobile (React Native)",
+    "featured": false,
+    "languages": [
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/rn-ubereats_all",
+    "homepage": null,
+    "updatedAt": "2021-09-30T17:05:21Z",
+    "hasReadme": true,
+    "readmeSummary": "This project can be run from a web browser or the Expo client app. You may find that you want to add more native code later on. You can do this by ejecting the project and rebuilding it yourself.",
+    "images": []
+  },
+  {
+    "slug": "rn-teslaclone",
+    "name": "rn-teslaclone",
+    "description": "A React Native clone of the Tesla mobile app UI.",
+    "category": "Mobile (React Native)",
+    "featured": false,
+    "languages": [
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/rn-teslaclone",
+    "homepage": null,
+    "updatedAt": "2021-08-19T15:18:31Z",
+    "hasReadme": true,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "rn-pollmama-all",
+    "name": "rn-pollmama-all",
+    "description": "A cross-platform polling app built with React Native and react-native-web for iOS, Android and the web.",
+    "category": "Mobile (React Native)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "Java",
+      "Objective-C",
+      "HTML",
+      "Ruby"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/rn-pollmama-all",
+    "homepage": null,
+    "updatedAt": "2021-07-18T06:15:20Z",
+    "hasReadme": true,
+    "readmeSummary": "This application is built using react-native & react-native-web, for the mobile (ios & android) and web.",
+    "images": []
+  },
+  {
+    "slug": "custom-modal",
+    "name": "custom_modal",
+    "description": "A reusable React modal component that triggers a confetti explosion when opened.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/custom_modal",
+    "homepage": null,
+    "updatedAt": "2021-04-26T04:07:51Z",
+    "hasReadme": true,
+    "readmeSummary": "Custom modal with confetti explosion on open modal button click. Confetti explosion in center posion of the screen.",
+    "images": []
+  },
+  {
+    "slug": "react-styled-jsx",
+    "name": "react_styled_jsx",
+    "description": "A React demo exploring styled-jsx for component-scoped CSS, deployed on Vercel.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "HTML"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/react_styled_jsx",
+    "homepage": "https://react-styled-jsx.sudir81.vercel.app",
+    "updatedAt": "2021-02-26T15:59:18Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "expense-track",
+    "name": "expense_track",
+    "description": "A React expense tracker for recording and reviewing spending.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/expense_track",
+    "homepage": null,
+    "updatedAt": "2021-02-10T18:29:19Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode.\\ Open http://localhost:3000 to view it in the browser.",
+    "images": []
+  },
+  {
+    "slug": "rn-covidapp-all",
+    "name": "rn-CovidApp-All",
+    "description": "A React Native app for tracking COVID-19 data, targeting web, iOS and Android from one codebase.",
+    "category": "Mobile (React Native)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "Java",
+      "Objective-C",
+      "CSS",
+      "Starlark"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/rn-CovidApp-All",
+    "homepage": null,
+    "updatedAt": "2020-11-25T04:43:15Z",
+    "hasReadme": true,
+    "readmeSummary": "This is base skeleton of ReactNative application, (which will run web, ios, android).",
+    "images": []
+  },
+  {
+    "slug": "reactnative-all",
+    "name": "ReactNative_All",
+    "description": "A base React Native skeleton that runs on web, iOS and Android, used as a starting point for apps.",
+    "category": "Mobile (React Native)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "Java",
+      "Objective-C",
+      "Starlark",
+      "Ruby"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/ReactNative_All",
+    "homepage": null,
+    "updatedAt": "2020-09-04T16:57:44Z",
+    "hasReadme": true,
+    "readmeSummary": "This is base skeleton of ReactNative application, (which will run web, ios, android).",
+    "images": []
+  },
+  {
+    "slug": "gatsby",
+    "name": "Gatsby",
+    "description": "Placeholder repository for Gatsby static-site experiments (currently empty).",
+    "category": "Testing & Tooling",
+    "featured": false,
+    "languages": [],
+    "topics": [],
+    "url": "https://github.com/sudir81/Gatsby",
+    "homepage": null,
+    "updatedAt": "2020-04-16T15:31:29Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "netflix-clone",
+    "name": "netflix_clone",
+    "description": "A React clone of the Netflix browsing interface with rows of movie content.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/netflix_clone",
+    "homepage": null,
+    "updatedAt": "2020-04-15T04:26:26Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    "images": []
+  },
+  {
+    "slug": "live-covid",
+    "name": "live-covid",
+    "description": "A React app showing live COVID-19 case numbers.",
+    "category": "Web Apps (React)",
+    "featured": false,
+    "languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/live-covid",
+    "homepage": null,
+    "updatedAt": "2020-04-13T04:51:35Z",
+    "hasReadme": true,
+    "readmeSummary": "Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.",
+    "images": []
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "categories": {
+    "Mobile (React Native)": [
+      "rn-uber-clone",
+      "rn-teslaclone",
+      "rn-ubereats_all",
+      "rn-spotify_all",
+      "rn-CovidApp-All",
+      "rn-pollmama-all",
+      "rn-goodFood",
+      "ReactNative_All"
+    ],
+    "Web Apps (React)": [
+      "r-KidsShop",
+      "shopping-site",
+      "cars-showroom",
+      "netflix_clone",
+      "expense_track",
+      "live-covid",
+      "angjs2reactjs",
+      "JS-Apps",
+      "react_styled_jsx",
+      "custom_modal",
+      "StarGame",
+      "Games"
+    ],
+    "GraphQL & State": [
+      "ApolloGQL-tutorial",
+      "graphql-react",
+      "redux-learn"
+    ],
+    "Testing & Tooling": [
+      "playwright-work",
+      "WebPack_DemoApp",
+      "Gatsby",
+      "Tek_HackRan_ReactApp"
+    ]
+  },
+  "featured": [
+    "rn-uber-clone",
+    "rn-spotify_all",
+    "r-KidsShop",
+    "cars-showroom",
+    "playwright-work",
+    "ApolloGQL-tutorial"
+  ],
+  "homepages": {
+    "react_styled_jsx": "https://react-styled-jsx.sudir81.vercel.app"
+  },
+  "descriptions": {
+    "rn-uber-clone": "A React Native clone of the Uber ride-hailing app, practising mobile navigation and map-based UI.",
+    "rn-spotify_all": "A TypeScript React Native (Expo) clone of the Spotify mobile app with tab navigation and reusable components.",
+    "r-KidsShop": "An e-commerce web application for kids' products built with React and SCSS.",
+    "cars-showroom": "A TypeScript React app showcasing a car showroom with a clean, browsable listing UI.",
+    "playwright-work": "A collection of end-to-end UI test automation projects built with Playwright Test in JavaScript.",
+    "ApolloGQL-tutorial": "A full-stack GraphQL learning project with an Apollo Server backend and an Apollo Client front-end.",
+    "rn-teslaclone": "A React Native clone of the Tesla mobile app UI.",
+    "rn-ubereats_all": "A React Native (Expo) food-delivery app inspired by Uber Eats, runnable on web and device.",
+    "rn-CovidApp-All": "A React Native app for tracking COVID-19 data, targeting web, iOS and Android from one codebase.",
+    "rn-pollmama-all": "A cross-platform polling app built with React Native and react-native-web for iOS, Android and the web.",
+    "rn-goodFood": "A React Native food app built as a mobile UI practice project.",
+    "ReactNative_All": "A base React Native skeleton that runs on web, iOS and Android, used as a starting point for apps.",
+    "shopping-site": "A React shopping website with a product listing and cart-style shopping UI.",
+    "netflix_clone": "A React clone of the Netflix browsing interface with rows of movie content.",
+    "expense_track": "A React expense tracker for recording and reviewing spending.",
+    "live-covid": "A React app showing live COVID-19 case numbers.",
+    "angjs2reactjs": "An exercise in modernizing an AngularJS app by migrating it to React.",
+    "JS-Apps": "A collection of small JavaScript, HTML and CSS practice apps.",
+    "react_styled_jsx": "A React demo exploring styled-jsx for component-scoped CSS, deployed on Vercel.",
+    "custom_modal": "A reusable React modal component that triggers a confetti explosion when opened.",
+    "StarGame": "A small browser game built with React.",
+    "Games": "Placeholder repository for future game projects (currently empty).",
+    "graphql-react": "A React front-end practice project consuming a GraphQL API.",
+    "redux-learn": "A learning project covering Redux state management fundamentals.",
+    "WebPack_DemoApp": "A demo app showing a hand-configured Webpack build for a JavaScript project.",
+    "Gatsby": "Placeholder repository for Gatsby static-site experiments (currently empty).",
+    "Tek_HackRan_ReactApp": "A React app built for a TekHackRan coding challenge."
+  }
+}

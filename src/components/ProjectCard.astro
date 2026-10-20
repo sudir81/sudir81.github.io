@@ -1,0 +1,17 @@
+---
+import type { Project } from '../data/types';
+interface Props { project: Project; }
+const { project: p } = Astro.props;
+---
+<article class="flex h-full flex-col rounded-2xl border border-slate-200 p-5 transition hover:-translate-y-0.5 hover:border-accent-400 hover:shadow-lg dark:border-slate-800 dark:hover:border-accent-400"
+  data-category={p.category} data-search={`${p.name} ${p.description} ${p.languages.join(' ')}`.toLowerCase()}>
+  <p class="text-xs font-medium uppercase tracking-wide text-slate-600 dark:text-slate-400">{p.category}</p>
+  <h3 class="mt-1 text-lg font-semibold text-slate-900 dark:text-white">{p.name}</h3>
+  <p class="mt-2 flex-1 text-sm">{p.description}</p>
+  {p.languages.length > 0 && <ul class="mt-4 flex flex-wrap gap-1.5">{p.languages.slice(0, 4).map((l) => <li class="tag">{l}</li>)}</ul>}
+  <div class="mt-4 flex flex-wrap gap-4 text-sm font-medium">
+    <a href={`/projects/${p.slug}/`} class="text-accent-700 hover:underline dark:text-accent-300">Details<span class="sr-only"> for {p.name}</span></a>
+    <a href={p.url} rel="noopener" class="text-slate-700 hover:underline dark:text-slate-300">GitHub<span class="sr-only"> repo for {p.name}</span></a>
+    {p.homepage && <a href={p.homepage} rel="noopener" class="text-slate-700 hover:underline dark:text-slate-300">Live demo<span class="sr-only"> of {p.name}</span></a>}
+  </div>
+</article>
