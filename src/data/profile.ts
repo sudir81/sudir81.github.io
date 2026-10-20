@@ -9,8 +9,7 @@ export const profile = {
   email: 'papinenisudheerkumar@gmail.com',
   github: 'https://github.com/sudir81',
   linkedin: 'https://www.linkedin.com/in/papinenisudheerkumar',
-  // Resume PDF: not provided. Put a file at public/resume.pdf and set this to '/resume.pdf'.
-  resume: null as string | null,
+  resume: '/resume.pdf' as string | null,
   bio: [
     "I'm Sudheer, a freelance web and mobile developer based in Texas who turns ideas into fast, polished products.",
     "I build React front-ends, React Native apps for iOS and Android, and GraphQL-powered experiences, and I back them with reliable Playwright end-to-end tests.",

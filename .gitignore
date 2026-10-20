@@ -4,3 +4,5 @@ dist/
 .env
 .env.*
 .claude/
+node_modules
+originals/
