@@ -29,8 +29,50 @@ body { @apply bg-white text-slate-700 antialiased dark:bg-slate-950 dark:text-sl
 .btn-primary { @apply bg-accent-600 text-white hover:bg-accent-700; }
 .btn-ghost { @apply border border-slate-300 text-slate-800 hover:border-accent-600 hover:text-accent-700 dark:border-slate-700 dark:text-slate-100 dark:hover:border-accent-400 dark:hover:text-accent-300; }
 .tag { @apply rounded-full bg-accent-50 px-2.5 py-0.5 text-xs font-medium text-accent-700 dark:bg-accent-600/20 dark:text-accent-300; }
-.section-title { @apply text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl dark:text-white; }
+.section-title { @apply text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white; }
 .eyebrow { @apply mb-2 text-sm font-semibold uppercase tracking-widest text-accent-600 dark:text-accent-400; }
 
 .filter-btn { @apply rounded-full border border-slate-300 px-3.5 py-1.5 text-sm font-medium text-slate-700 hover:border-accent-600 dark:border-slate-700 dark:text-slate-200; }
 .filter-btn[aria-pressed="true"] { @apply border-accent-600 bg-accent-600 text-white; }
+
+/* ---- Modern UI layer ---- */
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes blob { 0%, 100% { transform: translate(0, 0) scale(1); } 33% { transform: translate(50px, -40px) scale(1.15); } 66% { transform: translate(-40px, 30px) scale(.9); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+@keyframes gradient-x { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+
+.rise { animation: rise .9s cubic-bezier(.2, .7, .2, 1) both; animation-delay: var(--d, 0s); }
+.reveal { transition-delay: var(--d, 0s); }
+.blob { position: absolute; border-radius: 9999px; filter: blur(70px); opacity: .55; animation: blob 18s ease-in-out infinite; }
+.float { animation: float 6s ease-in-out infinite; }
+.caret { display: inline-block; width: 2px; height: 1.1em; margin-left: 3px; vertical-align: -0.15em; background: currentColor; animation: blink 1s step-end infinite; }
+
+.gradient-text { background-image: linear-gradient(90deg, #a5b4fc, #e879f9, #67e8f9, #a5b4fc); background-size: 200% auto; -webkit-background-clip: text; background-clip: text; color: transparent; animation: gradient-x 7s ease infinite; }
+.gradient-title { background-image: linear-gradient(90deg, #4f46e5, #9333ea, #0369a1); -webkit-background-clip: text; background-clip: text; color: transparent; }
+:where(.dark) .gradient-title { background-image: linear-gradient(90deg, #a5b4fc, #e879f9, #67e8f9); }
+
+.btn-primary { background-image: linear-gradient(135deg, #4f46e5, #7c3aed); box-shadow: 0 8px 24px -8px rgb(79 70 229 / .6); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -8px rgb(79 70 229 / .75); }
+.btn { transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, border-color .2s ease; }
+.btn:hover { transform: translateY(-2px); }
+
+.spotlight { position: relative; overflow: hidden; }
+.spotlight::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .3s; background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 50%), rgb(99 102 241 / .16), transparent 65%); }
+.spotlight:hover::before { opacity: 1; }
+.glass { background: rgb(255 255 255 / .06); border: 1px solid rgb(255 255 255 / .15); backdrop-filter: blur(12px); }
+
+.marquee-track { display: flex; width: max-content; animation: marquee 35s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.tag { transition: transform .2s ease, background-color .2s ease; }
+.tag:hover { transform: translateY(-2px); }
+
+#progress { position: fixed; inset: 0 0 auto 0; z-index: 60; height: 3px; transform-origin: 0 50%; transform: scaleX(0); background: linear-gradient(90deg, #6366f1, #a855f7, #06b6d4); }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise, .blob, .float, .gradient-text, .marquee-track, .caret { animation: none !important; }
+  .marquee { overflow-x: auto; }
+  .btn:hover, .tag:hover { transform: none; }
+}

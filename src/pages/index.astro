@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
+import Marquee from "../components/Marquee.astro";
 import About from '../components/About.astro';
 import Skills from '../components/Skills.astro';
 import ProjectCard from '../components/ProjectCard.astro';
@@ -13,12 +14,13 @@ const featured = projects.filter((p) => p.featured);
 ---
 <BaseLayout>
   <Hero />
+  <Marquee />
   <section id="work" class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
     <div class="reveal">
       <p class="eyebrow">Work</p>
-      <h2 class="section-title">Featured projects</h2>
+      <h2 class="section-title gradient-title">Featured projects</h2>
       <ul class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {featured.map((p) => <li><ProjectCard project={p} /></li>)}
+        {featured.map((p, i) => <li class="reveal" style={`--d:${(i % 3) * 100}ms`}><ProjectCard project={p} /></li>)}
       </ul>
     </div>
   </section>

@@ -3,25 +3,96 @@ import { Image } from 'astro:assets';
 import avatar from '../data/avatar.jpg';
 import background from '../data/background.jpg';
 import { profile } from '../data/profile';
+import { projects } from '../data/types';
+import { skills } from '../data/skills';
+
+const stats = [
+  { value: projects.length, label: 'Projects on GitHub' },
+  { value: new Set(projects.map((p) => p.category)).size, label: 'Focus areas' },
+  { value: Object.values(skills).flat().length, label: 'Technologies' },
+];
+const words = ['React', 'React Native', 'TypeScript', 'GraphQL', 'Playwright'];
 ---
 <section class="relative isolate overflow-hidden bg-slate-950">
-  <Image src={background} alt="" width={1280} loading="eager" class="absolute inset-0 -z-20 h-full w-full object-cover" aria-hidden="true" />
-  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/85 via-slate-950/60 to-indigo-950/30" aria-hidden="true"></div>
-  <div class="mx-auto flex max-w-5xl flex-col-reverse items-center gap-10 px-4 py-16 sm:px-6 md:flex-row md:justify-between md:py-28">
-    <div class="reveal text-center md:text-left">
-      <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-accent-300">{profile.title}</p>
-      <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">Hi, I'm {profile.name}.</h1>
-      <p class="mt-5 max-w-xl text-lg text-slate-200">{profile.intro}</p>
-      <p class="mt-2 text-sm text-slate-300">{profile.location}</p>
-      <div class="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
-        <a href="#work" class="btn bg-white text-accent-700 hover:bg-accent-50">View Work</a>
-        <a href={profile.github} class="btn border border-white/40 text-white hover:bg-white/10" rel="noopener">GitHub</a>
-        <a href="#contact" class="btn border border-white/40 text-white hover:bg-white/10">Contact</a>
-        {profile.resume && <a href={profile.resume} class="btn border border-white/40 text-white hover:bg-white/10">Resume</a>}
+  <Image src={background} alt="" width={1280} loading="eager" class="absolute inset-0 -z-30 h-full w-full object-cover opacity-30" aria-hidden="true" />
+  <div class="absolute inset-0 -z-20 bg-gradient-to-b from-slate-950/70 via-slate-950/60 to-slate-950" aria-hidden="true"></div>
+  <div class="blob -left-24 top-10 -z-10 h-80 w-80 bg-indigo-600" aria-hidden="true"></div>
+  <div class="blob -right-20 top-32 -z-10 h-96 w-96 bg-fuchsia-600/70" style="animation-delay:-6s" aria-hidden="true"></div>
+  <div class="blob bottom-0 left-1/3 -z-10 h-72 w-72 bg-cyan-500/60" style="animation-delay:-12s" aria-hidden="true"></div>
+
+  <div class="mx-auto flex max-w-5xl flex-col-reverse items-center gap-12 px-4 pb-10 pt-14 sm:px-6 md:flex-row md:justify-between md:pt-24">
+    <div class="text-center md:text-left">
+      <p class="rise glass mb-5 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-indigo-100" style="--d:.05s">
+        <span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span></span>
+        {profile.title}
+      </p>
+      <h1 class="rise text-4xl font-extrabold tracking-tight text-white sm:text-6xl" style="--d:.15s">
+        Hi, I'm <span class="gradient-text">{profile.name}</span>
+      </h1>
+      <p class="rise mt-5 max-w-xl text-lg text-slate-200" style="--d:.3s">{profile.intro}</p>
+      <p class="rise mt-3 text-xl font-semibold text-white" style="--d:.4s">
+        Currently crafting with <span id="typed" class="text-cyan-300" data-words={words.join('|')}>{words[0]}</span><span class="caret text-cyan-300" aria-hidden="true"></span>
+      </p>
+      <p class="rise mt-2 text-sm text-slate-300" style="--d:.45s">{profile.location}</p>
+      <div class="rise mt-8 flex flex-wrap justify-center gap-3 md:justify-start" style="--d:.55s">
+        <a href="#work" class="btn btn-primary">View Work</a>
+        <a href={profile.github} class="btn glass text-white hover:bg-white/15" rel="noopener">GitHub</a>
+        <a href="#contact" class="btn glass text-white hover:bg-white/15">Contact</a>
+        {profile.resume && <a href={profile.resume} class="btn glass text-white hover:bg-white/15">Resume</a>}
       </div>
     </div>
-    <div class="reveal shrink-0">
-      <Image src={avatar} alt={`Portrait of ${profile.name}`} width={240} height={240} loading="eager" class="h-48 w-48 rounded-full object-cover shadow-xl ring-4 ring-white/30 sm:h-60 sm:w-60" />
+    <div class="rise relative shrink-0" style="--d:.3s">
+      <div class="float relative">
+        <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-cyan-400 opacity-80 blur-md" aria-hidden="true"></div>
+        <div class="absolute -inset-1 rounded-full bg-[conic-gradient(from_0deg,#6366f1,#d946ef,#22d3ee,#6366f1)]" style="animation: spin-slow 8s linear infinite" aria-hidden="true"></div>
+        <Image src={avatar} alt={`Portrait of ${profile.name}`} width={240} height={240} loading="eager" class="relative h-48 w-48 rounded-full border-4 border-slate-950 object-cover sm:h-60 sm:w-60" />
+      </div>
     </div>
   </div>
+
+  <div class="rise mx-auto max-w-5xl px-4 pb-12 sm:px-6" style="--d:.7s">
+    <dl class="glass grid grid-cols-3 divide-x divide-white/10 rounded-2xl py-5 text-center">
+      {stats.map((s) => (
+        <div class="flex flex-col px-2">
+          <dt class="order-2 mt-1 text-xs text-slate-300 sm:text-sm">{s.label}</dt>
+          <dd class="text-3xl font-extrabold text-white sm:text-4xl"><span data-count={s.value}>{s.value}</span></dd>
+        </div>
+      ))}
+    </dl>
+  </div>
 </section>
+
+<script>
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Typewriter
+  const el = document.getElementById('typed');
+  if (el && !reduce) {
+    const words = (el.dataset.words ?? '').split('|');
+    let w = 0, c = 0, del = false;
+    const tick = () => {
+      const word = words[w];
+      c += del ? -1 : 1;
+      el.textContent = word.slice(0, c);
+      let wait = del ? 45 : 90;
+      if (!del && c === word.length) { del = true; wait = 1400; }
+      else if (del && c === 0) { del = false; w = (w + 1) % words.length; wait = 350; }
+      setTimeout(tick, wait);
+    };
+    setTimeout(tick, 1600);
+  }
+
+  // Count-up
+  document.querySelectorAll<HTMLElement>('[data-count]').forEach((n) => {
+    const target = Number(n.dataset.count);
+    if (reduce) return;
+    const start = performance.now();
+    const step = (t: number) => {
+      const p = Math.min((t - start - 700) / 1400, 1);
+      n.textContent = String(Math.round(target * (p < 0 ? 0 : 1 - Math.pow(1 - p, 3))));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    n.textContent = '0';
+    requestAnimationFrame(step);
+  });
+</script>

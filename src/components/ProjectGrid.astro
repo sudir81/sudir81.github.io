@@ -5,7 +5,7 @@ const categories = [...new Set(projects.map((p) => p.category))];
 ---
 <section id="all-projects" class="mx-auto max-w-5xl px-4 pb-16 sm:px-6">
   <div class="reveal">
-    <h3 class="text-2xl font-bold text-slate-900 dark:text-white">All projects</h3>
+    <h3 class="text-2xl font-extrabold text-slate-900 dark:text-white">All projects</h3>
     <div class="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="flex flex-wrap gap-2" role="group" aria-label="Filter by category">
         <button type="button" data-filter="all" aria-pressed="true" class="filter-btn">All</button>
@@ -18,7 +18,7 @@ const categories = [...new Set(projects.map((p) => p.category))];
     </div>
     <p id="count" class="mt-4 text-sm text-slate-600 dark:text-slate-400" aria-live="polite"></p>
     <ul id="grid" class="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {projects.map((p) => <li class="project-item"><ProjectCard project={p} /></li>)}
+      {projects.map((p, i) => <li class="project-item reveal" style={`--d:${(i % 3) * 80}ms`}><ProjectCard project={p} /></li>)}
     </ul>
     <p id="empty" hidden class="mt-6 text-slate-600 dark:text-slate-400">No projects match your search.</p>
   </div>

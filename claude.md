@@ -5,7 +5,7 @@ You are building and deploying my personal portfolio website. Work step by step,
 ## 1. About me (source of truth)
 
 - Name: **Sudheer Papineni**
-- Title: Freelance Web & Mobile App Developer
+- Title: Web & Mobile Applications Developer
 - Location: Texas, USA
 - GitHub: https://github.com/sudir81 (username `sudir81`)
 - Avatar: https://avatars.githubusercontent.com/u/55796541?v=4

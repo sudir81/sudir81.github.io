@@ -1,0 +1,18 @@
+---
+import { skills } from '../data/skills';
+const items = Object.values(skills).flat();
+---
+<div class="marquee overflow-hidden border-y border-slate-200 bg-white py-4 dark:border-slate-800 dark:bg-slate-950" aria-label="Technologies I work with" role="region" tabindex="0">
+  <div class="marquee-track" aria-hidden="true">
+    {[0, 1].map(() => (
+      <ul class="flex shrink-0 items-center">
+        {items.map((s) => (
+          <li class="mx-6 flex items-center gap-6 whitespace-nowrap text-lg font-semibold text-slate-600 dark:text-slate-300">
+            {s}<span class="text-accent-500">✦</span>
+          </li>
+        ))}
+      </ul>
+    ))}
+  </div>
+  <ul class="sr-only">{items.map((s) => <li>{s}</li>)}</ul>
+</div>
