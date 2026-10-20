@@ -28,7 +28,7 @@ const nav = [['Work', '/#work'], ['About', '/#about'], ['Skills', '/#skills'], [
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#4f46e5" />
+    <meta name="theme-color" content="#020617" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -40,10 +40,11 @@ const nav = [['Work', '/#work'], ['About', '/#about'], ['Skills', '/#skills'], [
     <meta name="twitter:image" content={ogImage} />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     <script is:inline>
-      document.documentElement.classList.remove('no-js');
+      document.documentElement.classList.remove("no-js");
+      // Night mode by default; only an explicit saved "light" choice overrides it.
+      document.documentElement.classList.add("dark");
       try {
-        var t = localStorage.getItem('theme');
-        if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+        if (localStorage.getItem("theme") === "light") document.documentElement.classList.remove("dark");
       } catch (e) {}
     </script>
   </head>
