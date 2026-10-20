@@ -37,6 +37,8 @@ const categories = [...new Set(projects.map((p) => p.category))];
       const card = li.firstElementChild as HTMLElement;
       const ok = (cat === 'all' || card.dataset.category === cat) && (!q || card.dataset.search!.includes(q));
       li.hidden = !ok;
+      li.classList.remove('pop');
+      if (ok) { void li.offsetWidth; li.classList.add('pop'); }
       if (ok) shown++;
     }
     count.textContent = `Showing ${shown} of ${items.length} projects`;

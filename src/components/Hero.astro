@@ -14,11 +14,17 @@ const stats = [
 const words = ['React', 'React Native', 'TypeScript', 'GraphQL', 'Playwright'];
 ---
 <section class="relative isolate overflow-hidden bg-slate-950">
-  <Image src={background} alt="" width={1280} loading="eager" class="absolute inset-0 -z-30 h-full w-full object-cover opacity-30" aria-hidden="true" />
+  <div class="absolute inset-x-0 -top-20 -bottom-20 -z-30" data-scroll="0.25" aria-hidden="true">
+    <Image src={background} alt="" width={1280} loading="eager" class="h-full w-full object-cover opacity-30" aria-hidden="true" />
+  </div>
   <div class="absolute inset-0 -z-20 bg-gradient-to-b from-slate-950/70 via-slate-950/60 to-slate-950" aria-hidden="true"></div>
-  <div class="blob -left-24 top-10 -z-10 h-80 w-80 bg-indigo-600" aria-hidden="true"></div>
-  <div class="blob -right-20 top-32 -z-10 h-96 w-96 bg-fuchsia-600/70" style="animation-delay:-6s" aria-hidden="true"></div>
-  <div class="blob bottom-0 left-1/3 -z-10 h-72 w-72 bg-cyan-500/60" style="animation-delay:-12s" aria-hidden="true"></div>
+  <div class="absolute inset-0 -z-10" data-depth="45" aria-hidden="true">
+    <div class="blob -left-24 top-10 h-80 w-80 bg-indigo-600"></div>
+    <div class="blob -right-20 top-32 h-96 w-96 bg-fuchsia-600/70" style="animation-delay:-6s"></div>
+  </div>
+  <div class="absolute inset-0 -z-10" data-depth="-30" aria-hidden="true">
+    <div class="blob bottom-0 left-1/3 h-72 w-72 bg-cyan-500/60" style="animation-delay:-12s"></div>
+  </div>
 
   <div class="mx-auto flex max-w-5xl flex-col-reverse items-center gap-12 px-4 pb-10 pt-14 sm:px-6 md:flex-row md:justify-between md:pt-24">
     <div class="text-center md:text-left">
@@ -41,9 +47,9 @@ const words = ['React', 'React Native', 'TypeScript', 'GraphQL', 'Playwright'];
         {profile.resume && <a href={profile.resume} class="btn glass text-white hover:bg-white/15">Resume</a>}
       </div>
     </div>
-    <div class="rise relative shrink-0" style="--d:.3s">
+    <div class="rise relative shrink-0" style="--d:.3s" data-depth="-22">
       <div class="float relative">
-        <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-cyan-400 opacity-80 blur-md" aria-hidden="true"></div>
+        <div class="morph absolute -inset-4 bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-cyan-400 opacity-60 blur-xl" aria-hidden="true"></div>
         <div class="absolute -inset-1 rounded-full bg-[conic-gradient(from_0deg,#6366f1,#d946ef,#22d3ee,#6366f1)]" style="animation: spin-slow 8s linear infinite" aria-hidden="true"></div>
         <Image src={avatar} alt={`Portrait of ${profile.name}`} width={240} height={240} loading="eager" class="relative h-48 w-48 rounded-full border-4 border-slate-950 object-cover sm:h-60 sm:w-60" />
       </div>
