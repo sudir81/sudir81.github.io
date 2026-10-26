@@ -110,6 +110,26 @@
     "images": []
   },
   {
+    "slug": "sudir81-github-io",
+    "name": "sudir81.github.io",
+    "description": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
+    "category": "Other",
+    "featured": false,
+    "languages": [
+      "Astro",
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/sudir81.github.io",
+    "homepage": null,
+    "updatedAt": "2026-10-20T23:21:57Z",
+    "hasReadme": true,
+    "readmeSummary": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
+    "images": []
+  },
+  {
     "slug": "js-apps",
     "name": "JS-Apps",
     "description": "A collection of small JavaScript, HTML and CSS practice apps.",
