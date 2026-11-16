@@ -110,6 +110,61 @@
     "images": []
   },
   {
+    "slug": "claims-platform",
+    "name": "claims-platform",
+    "description": "A working **insurance claims management system** that covers every topic in the Senior Full Stack interview guide (Node.js, React, Next.js, TypeScript, system design, testing, DevOps), with code you can open and demo dur",
+    "category": "Other",
+    "featured": false,
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "CSS",
+      "Dockerfile",
+      "HTML"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/claims-platform",
+    "homepage": null,
+    "updatedAt": "2026-11-13T03:34:34Z",
+    "hasReadme": true,
+    "readmeSummary": "A working **insurance claims management system** that covers every topic in the Senior Full Stack interview guide (Node.js, React, Next.js, TypeScript, system design, testing, DevOps), with code you can open and demo dur",
+    "images": []
+  },
+  {
+    "slug": "atmosphere-3d",
+    "name": "atmosphere-3d",
+    "description": "atmosphere 3d (TODO: add description)",
+    "category": "Other",
+    "featured": false,
+    "languages": [],
+    "topics": [],
+    "url": "https://github.com/sudir81/atmosphere-3d",
+    "homepage": null,
+    "updatedAt": "2026-11-12T17:47:13Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "next-weatherapp",
+    "name": "next-weatherapp",
+    "description": "You are building a small dashboard using a micro frontend mindset. Instead of hardcoding UI, the dashboard reads a JSON configuration and renders widgets dynamically. Each widget acts like an independent micro frontend t",
+    "category": "Other",
+    "featured": false,
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/next-weatherapp",
+    "homepage": null,
+    "updatedAt": "2026-11-12T17:46:06Z",
+    "hasReadme": true,
+    "readmeSummary": "You are building a small dashboard using a micro frontend mindset. Instead of hardcoding UI, the dashboard reads a JSON configuration and renders widgets dynamically. Each widget acts like an independent micro frontend t",
+    "images": []
+  },
+  {
     "slug": "sudir81-github-io",
     "name": "sudir81.github.io",
     "description": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
@@ -124,7 +179,7 @@
     "topics": [],
     "url": "https://github.com/sudir81/sudir81.github.io",
     "homepage": null,
-    "updatedAt": "2026-11-02T14:44:44Z",
+    "updatedAt": "2026-11-09T15:08:32Z",
     "hasReadme": true,
     "readmeSummary": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
     "images": []
