@@ -110,6 +110,73 @@
     "images": []
   },
   {
+    "slug": "banking-microservices",
+    "name": "banking-microservices",
+    "description": "banking microservices (TODO: add description)",
+    "category": "Other",
+    "featured": false,
+    "languages": [
+      "TypeScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/banking-microservices",
+    "homepage": null,
+    "updatedAt": "2026-11-19T06:03:14Z",
+    "hasReadme": true,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "banking-ui",
+    "name": "banking-ui",
+    "description": "banking ui (TODO: add description)",
+    "category": "Other",
+    "featured": false,
+    "languages": [],
+    "topics": [],
+    "url": "https://github.com/sudir81/banking-ui",
+    "homepage": null,
+    "updatedAt": "2026-11-18T19:56:29Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "enterprise-microservices",
+    "name": "enterprise-microservices",
+    "description": "enterprise microservices (TODO: add description)",
+    "category": "Other",
+    "featured": false,
+    "languages": [],
+    "topics": [],
+    "url": "https://github.com/sudir81/enterprise-microservices",
+    "homepage": null,
+    "updatedAt": "2026-11-18T04:39:04Z",
+    "hasReadme": false,
+    "readmeSummary": null,
+    "images": []
+  },
+  {
+    "slug": "sudir81-github-io",
+    "name": "sudir81.github.io",
+    "description": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
+    "category": "Other",
+    "featured": false,
+    "languages": [
+      "Astro",
+      "TypeScript",
+      "CSS",
+      "JavaScript"
+    ],
+    "topics": [],
+    "url": "https://github.com/sudir81/sudir81.github.io",
+    "homepage": null,
+    "updatedAt": "2026-11-16T14:45:43Z",
+    "hasReadme": true,
+    "readmeSummary": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
+    "images": []
+  },
+  {
     "slug": "claims-platform",
     "name": "claims-platform",
     "description": "A working **insurance claims management system** that covers every topic in the Senior Full Stack interview guide (Node.js, React, Next.js, TypeScript, system design, testing, DevOps), with code you can open and demo dur",
@@ -162,26 +229,6 @@
     "updatedAt": "2026-11-12T17:46:06Z",
     "hasReadme": true,
     "readmeSummary": "You are building a small dashboard using a micro frontend mindset. Instead of hardcoding UI, the dashboard reads a JSON configuration and renders widgets dynamically. Each widget acts like an independent micro frontend t",
-    "images": []
-  },
-  {
-    "slug": "sudir81-github-io",
-    "name": "sudir81.github.io",
-    "description": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
-    "category": "Other",
-    "featured": false,
-    "languages": [
-      "Astro",
-      "TypeScript",
-      "CSS",
-      "JavaScript"
-    ],
-    "topics": [],
-    "url": "https://github.com/sudir81/sudir81.github.io",
-    "homepage": null,
-    "updatedAt": "2026-11-09T15:08:32Z",
-    "hasReadme": true,
-    "readmeSummary": "Static portfolio built with Astro, TypeScript and Tailwind CSS. Live at https://sudir81.github.io.",
     "images": []
   },
   {
